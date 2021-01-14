@@ -1,24 +1,17 @@
 # ACM Research Coding Challenge (Spring 2021)
 
-## No Collaboration Policy
+# Background
+This was the first time I worked with any kind of genbank or genome data. I did not know what genome circular diagrams were either so I first searched up examples. Google provided many complicated and intricate examples, but I also found a few simpler examples that highlighted the features and their labels efficiently. 
 
-**You may not collaborate with anyone on this challenge.** You _are_ allowed to use Internet documentation. If you _do_ use existing code (either from Github, Stack Overflow, or other sources), **please cite your sources in the README**.
+Then I researched more about how genome diagrams could be created using Python. I found a scholarly article (1) that outlines various software and libraries that are used to create genome diagrams. The article mentioned Python's GenomeDiagram (more specifically Bio.Graphics.GenomeDiagram) module from the Biopython library. With further research, I determined that I can use the GenomeDiagram module to complete the challenge.
 
-## Submission Procedure
+# Process
+I utilized both the GenomeDiagram documentation (2) and a tutorial on the module (3) when working to complete the challenge. The first time I created the diagram, the labels were too small and since I had only one track, several features seemed to have overlapped each other. I edited my solution to contain 2 tracks instead of 1 and implemented a color sequence that created a more appealing visualization. I also made the label size larger and positioned it to the middle. I found that there were a total of 5 gene features for the Tomato Curly Stunt Virus.
 
-Please follow the below instructions on how to submit your answers.
+# Diagram
+![alt text](https://github.com/SBodapati11/ACM-Research-Coding-Challenge-S21/blob/main/circularGenomeDiagram.png)
 
-1. Create a **public** fork of this repo and name it `ACM-Research-Coding-Challenge-S21`. To fork this repo, click the button on the top right and click the "Fork" button.
-2. Clone the fork of the repo to your computer using `git clone [the URL of your clone]`. You may need to install Git for this (Google it).
-3. Complete the Challenge based on the instructions below.
-4. Submit your solution by filling out this [form](https://acmutd.typeform.com/to/uqAJNXUe).
-
-## Question One
-
-Genome analysis is the identification of genomic features such as gene expression or DNA sequences in an individual's genetic makeup. A genbank file (.gb) format contains information about an individual's DNA sequence. The following dataset in `Genome.gb` contains a complete genome sequence of Tomato Curly Stunt Virus. 
-
-**With this file, create a circular genome map and output it as a JPG/PNG/JPEG format.** We're not looking for any complex maps, just be sure to highlight the features and their labels.
-
-**You may use any programming language you feel most comfortable. We recommend Python because it is the easiest to implement. You're allowed to use any library you want to implement this**, just document which ones you used in this README file. Try to complete this as soon as possible.
-
-Regardless if you can or cannot answer the question, provide a short explanation of how you got your solution or how you think it can be solved in your README.md file. However, we highly recommend giving the challenge a try, you just might learn something new!
+# Citations
+1) Parveen, Alisha et al. “Overview of Genomic Tools for Circular Visualization in the Next-generation Genomic Sequencing Era.” Current genomics vol. 20,2 (2019): 90-99. doi:10.2174/1389202920666190314092044
+2) “Bio.Graphics.GenomeDiagram Package.” Bio.Graphics.GenomeDiagram Package - Biopython 1.75 Documentation, biopython.org/docs/1.75/api/Bio.Graphics.GenomeDiagram.html. 
+3) “Graphics Including GenomeDiagram.” Graphics Including GenomeDiagram - Test Test Documentation, biopython-tutorial.readthedocs.io/en/latest/notebooks/17%20-%20Graphics%20including%20GenomeDiagram.html. 
